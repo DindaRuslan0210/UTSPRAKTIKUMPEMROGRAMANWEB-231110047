@@ -1,0 +1,251 @@
+/* Menggunakan font baru yang lebih estetik dan modern */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300;400;600&display=swap');
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #f8a1c2;
+    padding: 20px 0;
+}
+
+header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 18px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Beranda */
+#home {
+    background-color: #fce4ec;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#home h1 {
+    font-size: 2.2rem;
+    color: #e91e63;
+}
+
+#home p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Produk */
+.produk-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.produk-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produk-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produk-nama {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.produk-harga {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.btn-wrapper {
+    margin-top: auto;
+}
+
+.beli-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FFB6C1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.beli-btn:hover {
+    background-color: #FF8FA3;
+    transform: scale(1.05);
+}
+
+.beli-btn:active {
+    transform: scale(0.95);
+    background-color: #FF6F91;
+}
+
+/* Layanan */
+#layanan {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#layanan h2 {
+    font-size: 2rem;
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.layanan-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.layanan-item {
+    background-color: #fff;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.layanan-icon {
+    font-size: 2.5rem;
+    color: #e91e63;
+    margin-bottom: 12px;
+}
+
+.layanan-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.layanan-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Kontak */
+#kontak {
+    background-color: #ffeef8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#kontak h2 {
+    font-size: 24px;
+    color: #d63384;
+    margin-bottom: 30px;
+}
+
+.kontak-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.kontak-box {
+    background: #fff0f5;
+    padding: 18px;
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0 0 12px rgba(214, 51, 132, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kontak-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(214, 51, 132, 0.15);
+}
+
+.kontak-box i {
+    font-size: 32px;
+    color: #ff69b4;
+    margin-bottom: 12px;
+}
+
+.kontak-box h4 {
+    font-size: 16px;
+    color: #d63384;
+    margin-bottom: 8px;
+}
+
+.kontak-box p {
+    color: #444;
+    font-size: 14px;
+}
+
+.kontak-box a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.kontak-box a:hover {
+    text-decoration: underline;
+}
